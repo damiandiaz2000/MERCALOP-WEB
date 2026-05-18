@@ -7,7 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #111827; --accent: #b45309; --bg: #ffffff; --text: #374151; --gray-light: #f9fafb; }
+        :root { 
+            --primary: #111827; 
+            --accent: #b45309; 
+            --bg: #ffffff; 
+            --text: #374151; 
+            --gray-light: #f9fafb; 
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Montserrat', sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding-top: 90px; }
         h1, h2, h3, .logo-text { font-family: 'Cinzel', serif; color: var(--primary); }
@@ -24,19 +30,25 @@
         /* Contenido de la Página */
         section { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
         .page-title { text-align: center; font-size: 2rem; margin-bottom: 15px; }
-        .subtitle { text-align: center; color: #6b7280; max-width: 700px; margin: 0 auto 50px auto; font-size: 1rem; }
+        .subtitle { text-align: center; color: #6b7280; max-width: 800px; margin: 0 auto 50px auto; font-size: 1rem; }
         
-        /* Galería de Casos Exclusiva */
-        .cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .case-card { background: var(--gray-light); border: 1px solid #e5e7eb; padding: 30px; border-radius: 8px; position: relative; transition: transform 0.3s, box-shadow 0.3s; }
-        .case-card:hover { transform: translateY(-3px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        /* Listado de Casos y Sentencias */
+        .cases-container { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+        .case-row { background: var(--gray-light); border: 1px solid #e5e7eb; border-left: 4px solid var(--accent); padding: 25px; border-radius: 0 8px 8px 0; display: grid; grid-template-columns: 200px 1fr; gap: 20px; align-items: center; }
         
-        .case-icon { color: var(--accent); font-size: 1.5rem; margin-bottom: 15px; display: block; }
-        .case-card h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--primary); }
-        .case-tag { display: inline-block; background: #fef3c7; color: #92400e; font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 4px; text-transform: uppercase; margin-bottom: 15px; }
-        .case-card p { font-size: 0.85rem; color: #4b5563; }
+        .case-meta { display: flex; flex-direction: column; gap: 5px; }
+        .case-tag { display: inline-block; background: #fef3c7; color: #92400e; font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 4px; text-transform: uppercase; width: max-content; }
+        .case-id { font-size: 0.8rem; color: #6b7280; font-weight: 600; }
+        
+        .case-content h3 { font-size: 1.1rem; margin-bottom: 8px; color: var(--primary); }
+        .case-content p { font-size: 0.9rem; color: #4b5563; }
+        .secure-notice { font-size: 0.75rem; color: #9ca3af; font-style: italic; margin-top: 5px; display: block; }
 
         footer { background-color: var(--primary); color: #9ca3af; text-align: center; padding: 20px; font-size: 0.85rem; margin-top: 80px; }
+        
+        @media (max-width: 768px) {
+            .case-row { grid-template-columns: 1fr; gap: 10px; padding: 20px; }
+        }
     </style>
 </head>
 <body>
@@ -60,13 +72,64 @@
 
     <section>
         <h1 class="page-title">Casos de Éxito & Sentencias Ganadas</h1>
-        <p class="subtitle">Resumen institucional de resoluciones, dictámenes y sentencias favorables obtenidas por nuestro cuerpo profesional en los tribunales de la República.</p>
+        <p class="subtitle">Historial de resoluciones, dictámenes y sentencias favorables obtenidas por nuestro cuerpo legal en los tribunales de la República, salvaguardando los intereses de nuestros clientes[cite: 9].</p>
         
-        <div class="cases-grid">
+        <div class="cases-container">
             
-            <div class="case-card">
-                <span class="case-icon">⚖️</span>
-                <span class="case-tag">Derecho Laboral</span>
-                <h3>Resolución de Visto Bueno & Despido</h3>
-                <p>Patrocinio exitoso en defensa de derechos de los trabajadores en Guayaquil, logrando la ratificación de indemnizaciones íntegras por despido intempestivo y la conformación justa de actas de finiquito.</p>
+            <div class="case-row">
+                <div class="case-meta">
+                    <span class="case-tag">Laboral</span>
+                    <span class="case-id">Dictamen Res-01</span>
+                </div>
+                <div class="case-content">
+                    <h3>Resolución sobre Despido Intempestivo e Indemnizaciones</h3>
+                    <p>Patrocinio y defensa técnica exitosa frente a demandas laborales[cite: 31, 34]. Se logró la ratificación íntegra de los derechos económicos de los trabajadores con un proceso eficaz[cite: 9].</p>
+                    <span class="secure-notice">[Fichero de muestra institucional protegido por confidencialidad]</span>
+                </div>
             </div>
+
+            <div class="case-row">
+                <div class="case-meta">
+                    <span class="case-tag">Constitucional</span>
+                    <span class="case-id">Dictamen Res-02</span>
+                </div>
+                <div class="case-content">
+                    <h3>Acción Extraordinaria de Protección Concedida</h3>
+                    <p>Interposición de recurso constitucional ante la Corte Constitucional[cite: 52]. Dictamen favorable enfocado en remediar la vulneración de garantías fundamentales en sedes administrativas previos[cite: 48].</p>
+                    <span class="secure-notice">[Fichero de muestra institucional protegido por confidencialidad]</span>
+                </div>
+            </div>
+
+            <div class="case-row">
+                <div class="case-meta">
+                    <span class="case-tag">Civil</span>
+                    <span class="case-id">Dictamen Res-03</span>
+                </div>
+                <div class="case-content">
+                    <h3>Juicio Ejecutivo y Recuperación de Cartera</h3>
+                    <p>Resolución judicial ejecutiva favorable para el cobro ágil de obligaciones comerciales y liquidación de deudas pendientes[cite: 20, 21], garantizando el patrimonio financiero de las entidades representadas.</p>
+                    <span class="secure-notice">[Fichero de muestra institucional protegido por confidencialidad]</span>
+                </div>
+            </div>
+
+            <div class="case-row">
+                <div class="case-meta">
+                    <span class="case-tag">Tránsito</span>
+                    <span class="case-id">Dictamen Res-04</span>
+                </div>
+                <div class="case-content">
+                    <h3>Defensa Técnica Absolutoria en Infracciones</h3>
+                    <p>Patrocinio legal en audiencias orales frente a contravenciones e infracciones generales de tránsito en la provincia del Guayas[cite: 28, 29], logrando resoluciones absolutorias basadas en un estricto análisis pericial.</p>
+                    <span class="secure-notice">[Fichero de muestra institucional protegido por confidencialidad]</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MERCALÓP & ASOCIADOS. | Diseñado por Pixel & Data</p>
+    </footer>
+
+</body>
+</html>
