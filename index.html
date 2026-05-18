@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Buró Jurídico Mercalóp & Asociados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #111827; --accent: #b45309; --bg: #ffffff; --text: #374151; --gray-light: #f9fafb; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding-top: 90px; }
+        h1, h2, h3, .logo-text { font-family: 'Cinzel', serif; color: var(--primary); }
+        
+        /* Menú Navegación */
+        header { position: fixed; top: 0; left: 0; width: 100%; background: #ffffff; border-bottom: 1px solid #e5e7eb; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo-text { font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; }
+        .logo-subtitle { font-size: 0.7rem; display: block; font-family: 'Montserrat', sans-serif; color: var(--accent); font-weight: 600; }
+        nav ul { display: flex; list-style: none; gap: 25px; }
+        nav a { text-decoration: none; color: var(--text); font-size: 0.9rem; font-weight: 600; transition: color 0.3s; }
+        nav a:hover, nav a.active { color: var(--accent); }
+
+        /* Contenido */
+        section { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .hero { text-align: center; padding: 60px 20px; background: #f9fafb; border-radius: 8px; margin-bottom: 40px; }
+        .hero h1 { font-size: 2.3rem; margin-bottom: 20px; }
+        .hero p { max-width: 800px; margin: 0 auto; font-size: 1.1rem; }
+        .mision-box { border-left: 4px solid var(--accent); padding: 25px; margin: 30px 0; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        
+        .lawyers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 30px; }
+        .lawyer-card { background: var(--gray-light); border: 1px solid #e5e7eb; padding: 25px; border-radius: 6px; }
+        .lawyer-card h3 { font-size: 1.1rem; margin-bottom: 5px; }
+        .lawyer-card .role { font-size: 0.85rem; color: var(--accent); font-weight: 600; text-transform: uppercase; margin-bottom: 15px; }
+        .lawyer-card ul { list-style: none; font-size: 0.85rem; }
+        .lawyer-card ul li { margin-bottom: 8px; padding-left: 15px; position: relative; }
+        .lawyer-card ul li::before { content: "•"; color: var(--accent); position: absolute; left: 0; }
+
+        footer { background-color: var(--primary); color: #9ca3af; text-align: center; padding: 20px; font-size: 0.85rem; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div>
+                <span class="logo-text">MERCALÓP</span>
+                <span class="logo-subtitle">& ASOCIADOS • BURÓ JURÍDICO</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="sentencias.html">Portal de Sentencias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="hero">
+            <h1>BURÓ JURÍDICO MERCALÓP & ASOCIADOS</h1>
+            <p>Constituido con solidez y prestigio en Guayaquil desde el año 2007. Ofrecemos respaldo legal fundamentado en la alta excelencia académica y la honestidad.</p>
+        </div>
+
+        <div class="mision-box">
+            <h3>Nuestra Misión</h3>
+            <p>“Orientar legalmente a nuestros clientes, así como en los procedimientos judiciales, administrativos o arbitrales que se nos encomienda con toda responsabilidad y seriedad, a efecto de alcanzar los objetivos delineados... logrando mediante la conciliación, la mediación o el arbitraje, un rápido y eficaz arreglo.”</p>
+        </div>
+
+        <h2 style="margin-top: 40px; text-align: center;">Socios Fundadores & Trayectoria</h2>
+        <div class="lawyers-grid">
+            <div class="lawyer-card">
+                <h3>Msc. Ab. Pedro Rafael Merchán Miñán</h3>
+                <div class="role">Director Jurídico Fundador</div>
+                <ul>
+                    <li>Graduado con Premio Contenta (Promedio 9.80) en la Universidad de Guayaquil.</li>
+                    <li>Exmiembro del Directorio del Colegio de Abogados del Guayas.</li>
+                    <li>Ex Juez de Coactiva de CEDEGE e Inspector de Trabajo.</li>
+                    <li>Maestría en Derecho Constitucional, Penal, Administrativo y PhD.</li>
+                    <li>Actual Director Jurídico de FEDENADOR.</li>
+                </ul>
+            </div>
+
+            <div class="lawyer-card">
+                <h3>Msc. Ab. Richard Fabián Álvarez Gómez</h3>
+                <div class="role">Gerente Administrativo Fundador</div>
+                <ul>
+                    <li>Director de la Dirección Jurídica Logística del Buró.</li>
+                    <li>Exasistente Legal de CEDEGE (Área administrativa y de expropiación).</li>
+                    <li>Exasistente Legal del INEC y de FEDENADOR.</li>
+                    <li>Catedrático de la Universidad de Especialidades Espíritu Santo (UEES).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MERCALÓP & ASOCIADOS. | Diseñado por Pixel & Data</p>
+    </footer>
+</body>
+</html>
