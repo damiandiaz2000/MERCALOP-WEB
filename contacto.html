@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Buró Jurídico Mercalóp & Asociados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #111827; --accent: #b45309; --bg: #ffffff; --text: #374151; --gray-light: #f9fafb; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding-top: 90px; }
+        h1, h2, h3, .logo-text { font-family: 'Cinzel', serif; color: var(--primary); }
+        
+        header { position: fixed; top: 0; left: 0; width: 100%; background: #ffffff; border-bottom: 1px solid #e5e7eb; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo-text { font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; }
+        .logo-subtitle { font-size: 0.7rem; display: block; font-family: 'Montserrat', sans-serif; color: var(--accent); font-weight: 600; }
+        nav ul { display: flex; list-style: none; gap: 25px; }
+        nav a { text-decoration: none; color: var(--text); font-size: 0.9rem; font-weight: 600; }
+        nav a:hover, nav a.active { color: var(--accent); }
+
+        section { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .page-title { text-align: center; font-size: 2rem; margin-bottom: 40px; }
+        
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        .contact-card { background: var(--gray-light); padding: 30px; border-radius: 6px; border: 1px solid #e5e7eb; }
+        .contact-card h3 { margin-bottom: 20px; font-size: 1.2rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 10px; }
+        .info-group { margin-bottom: 20px; }
+        .info-group strong { display: block; font-size: 0.9rem; color: var(--accent); text-transform: uppercase; }
+        
+        .btn-whatsapp { display: inline-block; background-color: #25d366; color: white; text-decoration: none; padding: 12px 25px; border-radius: 4px; font-weight: 600; margin-top: 15px; text-align: center; transition: background 0.3s; }
+        .btn-whatsapp:hover { background-color: #128c7e; }
+
+        footer { background-color: var(--primary); color: #9ca3af; text-align: center; padding: 20px; font-size: 0.85rem; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div>
+                <span class="logo-text">MERCALÓP</span>
+                <span class="logo-subtitle">& ASOCIADOS • BURÓ JURÍDICO</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="sentencias.html">Portal de Sentencias</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <h1 class="page-title">Canales de Atención Institucional</h1>
+        <div class="contact-grid">
+            
+            <div class="contact-card">
+                <h3>Ubicaciones Físicas</h3>
+                <div class="info-group">
+                    <strong>📍 Oficina Centro (Principal)</strong>
+                    <p>Aguirre No. 1505 y José de Antepara, Guayaquil.</p>
+                </div>
+                <div class="info-group">
+                    <strong>📍 Oficina Sur</strong>
+                    <p>Cdla. Los Esteros Mz. 8ª Villa 29, Guayaquil.</p>
+                </div>
+                <div class="info-group">
+                    <strong>⏰ Horarios de Despacho</strong>
+                    <p>Lunes a Viernes: 09H00 a 17H00 (Previa cita). Atención de emergencias disponible fines de semana.</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h3>Comunicaciones Directas</h3>
+                <div class="info-group">
+                    <strong>📞 Teléfonos de Línea Directa</strong>
+                    <p>0993094887 / 0993084874</p>
+                </div>
+                <div class="info-group">
+                    <strong>📧 Correos Oficiales</strong>
+                    <p>ab.merchanm@mercalop.com<br>notificaciones@mercalop.com</p>
+                </div>
+                
+                <a href="https://wa.me/593993094887?text=Hola%20Buró%20Jurídico%20Mercalóp,%20deseo%20solicitar%20una%20asesoría%20legal." class="btn-whatsapp" target="_blank">
+                    💬 Contactar Consultor en WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MERCALÓP & ASOCIADOS. | Diseñado por Pixel & Data</p>
+    </footer>
+</body>
+</html>
